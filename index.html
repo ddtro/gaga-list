@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GAGA LIST</title>
+<title>【entity-GAGA¦canonical_name=GAGA】 LIST</title>
 <style>
   body {
     font-family: Arial, Helvetica, sans-serif;
@@ -12,16 +12,8 @@
     margin: 0 auto;
     padding: 20px;
   }
-  h1 {
-    text-align: center;
-    font-size: 42px;
-    letter-spacing: 2px;
-  }
-  .subtitle {
-    text-align: center;
-    color: #666;
-    margin-bottom: 30px;
-  }
+  h1 { text-align: center; font-size: 42px; letter-spacing: 2px; margin-bottom: 5px; }
+  .subtitle { text-align: center; color: #666; margin-bottom: 30px; }
   .level-card {
     display: flex;
     gap: 20px;
@@ -29,78 +21,51 @@
     border: 1px dashed #ccc;
     padding: 20px;
     margin-bottom: 20px;
-    background: white;
   }
-  .level-card img {
+  .thumb {
     width: 280px;
     height: 157px;
-    object-fit: cover;
-    background: #111;
-  }
-  .level-card h2 {
-    font-size: 30px;
-    margin: 0 0 8px 0;
-  }
-  .level-card p {
-    margin: 4px 0;
-    font-size: 19px;
-  }
-  .author {
+    min-width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 28px;
     font-weight: bold;
-    text-decoration: underline;
+    text-align: center;
+    text-shadow: 2px 2px 0 rgba(0,0,0,0.4);
+    padding: 10px;
+    box-sizing: border-box;
   }
-  .points {
-    color: #555;
-  }
+  .level-card h2 { font-size: 30px; margin: 0 0 8px 0; }
+  .level-card p { margin: 4px 0; font-size: 19px; }
+  .author { font-weight: bold; text-decoration: underline; }
+  .points { color: #555; }
   @media (max-width: 600px) {
     .level-card { flex-direction: column; align-items: flex-start; }
-    .level-card img { width: 100%; height: auto; }
+    .thumb { width: 100%; min-width: 0; }
   }
 </style>
 </head>
 <body>
 
-<h1>GAGA LIST</h1>
+<h1>【entity-GAGA¦canonical_name=GAGA】 LIST</h1>
 <p class="subtitle">Los niveles más difíciles - por ddtro</p>
 <div id="list"></div>
 
 <script>
 const levels = [
-  {
-    rank: 1,
-    name: "GRIEF",
-    author: "icedcave",
-    img: "https://i.imgur.com/8QwXyZp.jpeg",
-    points: "35.00 (76%) — 350.00 (100%) points"
-  },
-  {
-    rank: 2,
-    name: "Artemis 13",
-    author: "Mvngo",
-    img: "https://i.imgur.com/8QwXyZp.jpeg",
-    points: "33.17 (73%) — 331.71 (100%) points"
-  },
-  {
-    rank: 3,
-    name: "Society",
-    author: "Neomarbilan",
-    img: "https://i.imgur.com/8QwXyZp.jpeg",
-    points: "31.34 (66%) — 313.42 (100%) points"
-  },
-  {
-    rank: 4,
-    name: "Thinking Space II",
-    author: "CairoX",
-    img: "https://i.imgur.com/8QwXyZp.jpeg",
-    points: "29.17 (79%) — 291.70 (100%) points"
-  }
+  { rank: 1, name: "GRIEF", author: "icedcave", color: "#8e2de2, #4a00e0", points: "35.00 (76%) — 350.00 (100%) points" },
+  { rank: 2, name: "Artemis 13", author: "Mvngo", color: "#ff416c, #ff4b2b", points: "33.17 (73%) — 331.71 (100%) points" },
+  { rank: 3, name: "Society", author: "Neomarbilan", color: "#11998e, #38ef7d", points: "31.34 (66%) — 313.42 (100%) points" },
+  { rank: 4, name: "Thinking Space II", author: "CairoX", color: "#fc4a1a, #f7b733", points: "29.17 (79%) — 291.70 (100%) points" },
 ];
 
 const list = document.getElementById('list');
 levels.forEach(l => {
   list.innerHTML += `
     <div class="level-card">
-      <img src="${l.img}" alt="${l.name}">
+      <div class="thumb" style="background: linear-gradient(135deg, ${l.color})">${l.name}</div>
       <div>
         <h2>#${l.rank} – ${l.name}</h2>
         <p>published by <span class="author">${l.author}</span></p>
