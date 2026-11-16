@@ -29,6 +29,7 @@
 <div id="list"></div>
 
 <script>
+const BASE = "https://raw.githubusercontent.com/ddtro/gaga-list/main/";
 const levels = [
   { rank: 1, name: "Theory of Everything 2", author: "RobTop", img: "toe2.png", color: "#8e2de2, #4a00e0", points: "Easy Demon - 14 - 12 Orbes" },
   { rank: 2, name: "Deadlocked", author: "RobTop", img: "deadlocked.png", color: "#232526, #414345", points: "Easy Demon - 15 - 14 Orbes" },
@@ -54,7 +55,7 @@ levels.forEach(l => {
     <div class="level-card">
       <div class="thumb-wrap">
         <div class="thumb-fallback" style="background: linear-gradient(135deg, ${l.color})">${l.name}</div>
-        <img src="${l.img}" alt="${l.name}" onerror="this.style.display='none'">
+        <img src="${BASE + l.img}" alt="${l.name}" onerror="this.style.display='none'">
       </div>
       <div>
         <h2>#${l.rank} - ${l.name}</h2>
