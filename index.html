@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GAGA LIST - los niveles más malos de GD</title>
+<title>GAGA LIST - karluchizjeje</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
 body{background:#0f0f1a;color:white;padding:20px}
@@ -48,7 +48,7 @@ body.editing .card-actions{display:flex}
 </style>
 </head>
 <body>
-<header><h1 id="mainTitle">GAGA LIST</h1><p id="mainSub">los niveles más malos de GD<br>por ddtro</p></header>
+<header><h1 id="mainTitle">GAGA LIST</h1><p id="mainSub">la lista mas gaga de gd<br>por tallladega</p></header>
 <div class="topbar">
   <button class="btn-edit" onclick="toggleEdit()">✏️ Editar lista</button>
   <button class="btn-add" onclick="openForm()">＋ Agregar nivel</button>
@@ -129,7 +129,7 @@ function render(){
   document.getElementById('mainTitle').innerText = currentPage==='main' ? 'GAGA LIST' : 'UPCOMING TOP 1s';
   document.getElementById('mainSub').innerHTML = currentPage==='main' ? 'los niveles más malos de GD<br>por ddtro' : 'los próximos Top 1s<br>por ddtro';
   document.getElementById('eyeLabel').innerText = currentPage==='main' ? 'Ver Upcoming Top 1s' : 'Volver a GAGA LIST';
-  document.getElementById('hint').innerHTML = currentPage==='main' ? 'Solo tú puedes editar con tu contraseña. Solo te la pide una vez por pestaña.<br>Estás en la página principal. Dale al ojito para ver los Upcoming Top 1s.' : 'Solo tú puedes editar con tu contraseña. Solo te la pide una vez por pestaña.<br>Estás en Upcoming Top 1s. Dale al ojito para volver a la GAGA LIST.';
+  document.getElementById('hint').innerHTML = currentPage==='main' ? 'hola.<br>Estás en la página principal. Dale al ojito para ver los Upcoming Top 1s.' : 'Solo tú puedes editar con tu contraseña. Solo te la pide una vez por pestaña.<br>Estás en Upcoming Top 1s. Dale al ojito para volver a la GAGA LIST.';
   const list = getList();
   const emptyBox = document.getElementById('emptyBox');
   if(list.length===0){
