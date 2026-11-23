@@ -7,6 +7,13 @@
     "desc": "\"RECORDS\" : Tallladega 100%"
   },
   {
+    "name": "Infinite Circles",
+    "author": "Startor",
+    "img": "infinite.png",
+    "diff": "Easy Demon",
+    "desc": "\"RECORDS\" : Tallladega 100%"
+  },
+  {
     "name": "Theory of Everything 2",
     "author": "RobTop",
     "img": "toe2.png",
@@ -21,23 +28,16 @@
     "desc": "\"RECORDS\" : Tallladega 100%"
   },
   {
-    "name": "Clubstep",
-    "author": "RobTop",
-    "img": "clubstep.png",
-    "diff": "Easy Demon",
-    "desc": "\"RECORDS\" : Tallladega 100%"
-  },
-  {
-    "name": "Infinite Circles",
-    "author": "Startor",
-    "img": "infinite.png",
-    "diff": "Easy Demon",
-    "desc": "\"RECORDS\" : Tallladega 100%"
-  },
-  {
     "name": "The Lightning Road",
     "author": "timeless real",
     "img": "lightning.png",
+    "diff": "Easy Demon",
+    "desc": "\"RECORDS\" : Tallladega 100%"
+  },
+  {
+    "name": "Clubstep",
+    "author": "RobTop",
+    "img": "clubstep.png",
     "diff": "Easy Demon",
     "desc": "\"RECORDS\" : Tallladega 100%"
   },
