@@ -35,13 +35,6 @@
     "desc": "\"RECORDS\" : Tallladega 100%"
   },
   {
-    "name": "Speed Racer",
-    "author": "ZenticAlpha",
-    "img": "speedracer.png",
-    "diff": "Easy Demon",
-    "desc": "\"RECORDS\" : Tallladega 100%"
-  },
-  {
     "name": "The Lightning Road",
     "author": "timeless real",
     "img": "lightning.png",
@@ -49,9 +42,9 @@
     "desc": "\"RECORDS\" : Tallladega 100%"
   },
   {
-    "name": "The Nightmare",
-    "author": "Jax",
-    "img": "nightmare.png",
+    "name": "Speed Racer",
+    "author": "ZenticAlpha",
+    "img": "speedracer.png",
     "diff": "Easy Demon",
     "desc": "\"RECORDS\" : Tallladega 100%"
   },
@@ -66,6 +59,13 @@
     "name": "Platinum Adventure",
     "author": "Jerry4",
     "img": "platinum.png",
+    "diff": "Easy Demon",
+    "desc": "\"RECORDS\" : Tallladega 100%"
+  },
+  {
+    "name": "The Nightmare",
+    "author": "Jax",
+    "img": "nightmare.png",
     "diff": "Easy Demon",
     "desc": "\"RECORDS\" : Tallladega 100%"
   },
